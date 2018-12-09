@@ -1,5 +1,9 @@
 {
     "disableAutoUpdate": false,
+    "name": "skill-resets",
+    "author": "Caali / eemj",
+    "description": "Pops up an on-screen message whenever a skill's cooldown is reset.",
+    "version": "1.0",
     "options": {
         "niceName": "SkillResets",
         "settingsVersion": 1,
