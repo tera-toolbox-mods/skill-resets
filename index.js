@@ -1,6 +1,6 @@
 module.exports = function SkillResets(mod) {
     if(mod.proxyAuthor !== 'caali')
-        mod.warn('You are trying to use BattleNotify on an unsupported version of tera-proxy. It may not work as expected, and even if it does now it may break at any point in the future!');
+        mod.warn('You are trying to use SkillResets on an unsupported version of tera-proxy. It may not work as expected, and even if it does now it may break at any point in the future!');
 
     mod.hook('S_CREST_MESSAGE', 2, ({type, skill}) => {
         if (type === 6) {
