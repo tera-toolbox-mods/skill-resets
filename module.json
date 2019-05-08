@@ -1,5 +1,4 @@
 {
-    "disableAutoUpdate": false,
     "name": "skill-resets",
     "author": "Caali / eemj",
     "description": "Pops up an on-screen message whenever a skill's cooldown is reset.",
@@ -10,5 +9,5 @@
         "settingsFile": "config.json",
         "settingsMigrator": "settings_migrator.js"
     },
-    "servers": ["https://raw.githubusercontent.com/caali-hackerman/skill-resets/master/"]
+    "servers": ["https://raw.githubusercontent.com/tera-toolbox-mods/skill-resets/master/"]
 }
