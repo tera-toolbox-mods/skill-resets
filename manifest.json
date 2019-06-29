@@ -1,11 +1,12 @@
 {
     "files": {
-        "module.json": "6af273485555ff0a1a9f0858cafe21f04261dd5c81bc87e99d844911c3fb68ec",
-        "index.js": "e69395f94ad94fa9ceab4603ec84ba848e6958d45c22f1bc6711492062410e7f",
-        "settings_migrator.js": "0e9ea0a78563cf42394465c89214e1e1a5606f9c43e4b091620b3400c4e5153d"
+        "module.json": "cb5f06734fdbf874d009bf7db81e51e616967cf722a2e3aad8798d5d21c201b8",
+        "index.js": "8ecf390c023a74f0197f2bb74660ad0ab321124c1291cbc4224e708c28caabb4",
+        "settings_migrator.js": "c4ce3950453e38bba3d49e9daf853139fb77dc4a47e26688d07d33d646c94969"
     },
     "defs": {
         "S_DUNGEON_EVENT_MESSAGE": 2,
-        "S_CREST_MESSAGE": 2
+        "S_CREST_MESSAGE": 2,
+        "S_PLAY_SOUND": 1
     }
 }
