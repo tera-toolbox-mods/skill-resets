@@ -14,7 +14,6 @@ module.exports = function SkillResets(mod) {
                 iconsData.set(icon.attributes.skillId, icon.attributes.iconName);
                 iconsData.set(getSkillBase(icon.attributes.skillId), icon.attributes.iconName);
             });
-            console.log(iconsData)
         });
     });
 
@@ -22,12 +21,10 @@ module.exports = function SkillResets(mod) {
         if (type === 6) {
             
             let icon = iconsData.get(skill) || iconsData.get(getSkillBase(skill));
-            console.log(icon, skill)
             if (lastReset.icon !== icon || (lastReset.icon === icon && (Date.now() - lastReset.time > warnTimeout))) {
                 
                 lastReset.icon = icon;
                 lastReset.time = Date.now();
-                console.log("show")
                 mod.send("S_CUSTOM_STYLE_SYSTEM_MESSAGE", 1, {
                     message: `<img src="img://__${icon}" width="48" height="48" vspace="-20"/><font size="24" color="${mod.settings.reset_font_color}">&nbsp;Reset</font>`,
                     style: mod.settings.resetStyle
