@@ -1,7 +1,9 @@
 const DefaultSettings = {
     "show_system_reset_message": false,
+    "resetStyle": 51,
     "reset_font_color": "#FF4500",
-    "sound": false
+    "sound": false,
+    "soundId": 3028
 };
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
@@ -27,6 +29,9 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
                 delete settings.flashing_notification;
                 settings.sound = false;
                 break;
+            case 3:
+                settings.soundId = 3028;
+                settings.resetStyle = 51;
         }
 
         return settings;
