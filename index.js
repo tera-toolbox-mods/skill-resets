@@ -1,4 +1,4 @@
-module.exports = function SkillResets(mod) {
+exports.NetworkMod = function(mod) {
     const warnTimeout = 15;
     let lastReset = { time: null, icon: null };
     let iconsData = new Map();
@@ -19,10 +19,8 @@ module.exports = function SkillResets(mod) {
 
     mod.hook("S_CREST_MESSAGE", 2, ({ type, skill }) => {
         if (type === 6) {
-            
             let icon = iconsData.get(skill) || iconsData.get(getSkillBase(skill));
             if (lastReset.icon !== icon || (lastReset.icon === icon && (Date.now() - lastReset.time > warnTimeout))) {
-                
                 lastReset.icon = icon;
                 lastReset.time = Date.now();
                 mod.send("S_CUSTOM_STYLE_SYSTEM_MESSAGE", 1, {
